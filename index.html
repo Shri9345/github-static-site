@@ -1,51 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8">
+    <title>Shri | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
 
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <a href="assets/resume.pdf" download class="btn">Download Resume</a>
-  </header>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Shri</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card" data-aos="fade-up">
-      <img src="assets/project1.png" alt="Project Screenshot" class="project-img">
-      <h3>Static Website</h3>
-      <p>Simple site hosted on GitHub Pages using HTML & CSS.</p>
-      <div class="links">
-        <a href="https://shri9345.github.io/github-static-site/" target="_blank">
-          <img src="assets/external-link.svg" alt="Live Site">
-        </a>
-        <a href="https://github.com/Shri9345/github-static-site" target="_blank">
-          <img src="assets/github.svg" alt="GitHub">
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Hello, I'm Shridhar Patil 👋</h1>
+            <p>DevOps & Cloud enthusiast building cool things on GitHub Pages.</p>
+            <a href="#projects" class="btn">See My Projects</a>
+        </div>
+    </section>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("show");
-    }
-  </script>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>🧠 My Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Static Website on GitHub Pages</h3>
+                <p>A basic static site hosted with GitHub Pages and enhanced using HTML + CSS.</p>
+                <a href="https://shri9345.github.io/github-static-site/" target="_blank" class="btn small">Visit Site</a>
+            </div>
+            <!-- Add more projects if you like -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>📬 Contact Me</h2>
+        <p>Want to collaborate or just say hi? Reach out!</p>
+        <a href="mailto:shridharpatil.career@gmail.com" class="btn">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Shri | All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
